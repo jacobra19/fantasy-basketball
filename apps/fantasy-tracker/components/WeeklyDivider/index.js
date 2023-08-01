@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Divider, Typography } from "@material-ui/core";
 
 const Text = ({ str }) => {
@@ -25,9 +24,5 @@ const WeeklyDivider = ({ text = '' }) => {
         </div>
     );
 }
-
-WeeklyDivider.propTypes = {
-    text: PropTypes.string,
-};
 
 export default WeeklyDivider;

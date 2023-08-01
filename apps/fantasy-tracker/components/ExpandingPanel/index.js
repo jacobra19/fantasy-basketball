@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import PropTypes from "prop-types";
 import { format } from 'date-fns'
 
 import {
@@ -115,11 +114,5 @@ const ExpandingPanel = ({ date, isRookieStatusValid, rosters }) => {
 };
 
 export default ExpandingPanel;
-
-ExpandingPanel.propTypes = {
-    date: PropTypes.object.isRequired,
-    isRookieStatusValid: PropTypes.bool.isRequired,
-    rosters: PropTypes.array.isRequired,
-};
 
 ExpandingPanel.defaultProps = {};

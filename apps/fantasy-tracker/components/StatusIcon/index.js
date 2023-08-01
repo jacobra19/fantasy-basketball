@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes, { string, number } from 'prop-types';
 
 import ErrorIcon from "@material-ui/icons/Error";
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
@@ -33,14 +32,6 @@ const StatusIcon = ({ isValid, size }) => {
             <ErrorIcon style={styles("invalidIcon")} size={size} />
     )
 }
-
-StatusIcon.propTypes = {
-    size: PropTypes.oneOfType([
-        string,
-        number
-    ]),
-    isValid: PropTypes.bool.isRequired,
-};
 
 StatusIcon.defaultProps = {
     size: '1rem',
